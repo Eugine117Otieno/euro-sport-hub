@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro Sports Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">EURO <span>SPORTS HUB</span></h1>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#scores">Scores</a></li>
+                <li><a href="#fixtures">Fixtures</a></li>
+                <li><a href="#leagues">Leagues</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>WELCOME TO EURO SPORTS HUB</h2>
+            <p>Your home for sports news, live scores and fixtures.</p>
+            <a href="#scores" class="hero-btn">Explore Scores</a>
+        </div>
+    </section>
+
+    <!-- Sports Section -->
+    <section class="section" id="sports">
+        <h2>Explore Sports</h2>
+        <p class="section-description">Choose your favourite sport.</p>
+
+        <div class="sports-grid">
+
+            <div class="sport-card" onclick="showSport('Football')">
+                <div class="sport-icon">⚽</div>
+                <h3>Football</h3>
+            </div>
+
+            <div class="sport-card" onclick="showSport('Basketball')">
+                <div class="sport-icon">🏀</div>
+                <h3>Basketball</h3>
+            </div>
+
+            <div class="sport-card" onclick="showSport('Tennis')">
+                <div class="sport-icon">🎾</div>
+                <h3>Tennis</h3>
+            </div>
+
+            <div class="sport-card" onclick="showSport('Athletics')">
+                <div class="sport-icon">🏃</div>
+                <h3>Athletics</h3>
+            </div>
+
+            <div class="sport-card" onclick="showSport('Rugby')">
+                <div class="sport-icon">🏉</div>
+                <h3>Rugby</h3>
+            </div>
+
+            <div class="sport-card" onclick="showSport('Cycling')">
+                <div class="sport-icon">🚴</div>
+                <h3>Cycling</h3>
+            </div>
+
+            <div class="sport-card" onclick="showSport('Motorsport')">
+                <div class="sport-icon">🏎️</div>
+                <h3>Motorsport</h3>
+            </div>
+
+            <div class="sport-card" onclick="showSport('Boxing')">
+                <div class="sport-icon">🥊</div>
+                <h3>Boxing</h3>
+            </div>
+
+            <div class="sport-card" onclick="showSport('Cricket')">
+                <div class="sport-icon">🏏</div>
+                <h3>Cricket</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Live Scores -->
+    <section class="section dark-section" id="scores">
+        <h2>⚡ Live Scores</h2>
+        <p class="section-description">Sample match scores.</p>
+
+        <div class="scores-grid">
+
+            <div class="score-card">
+                <p>Premier League</p>
+                <h3>Arsenal 2 - 1 Chelsea</h3>
+                <span class="live">SAMPLE SCORE</span>
+            </div>
+
+            <div class="score-card">
+                <p>La Liga</p>
+                <h3>Barcelona 3 - 0 Sevilla</h3>
+                <span class="live">SAMPLE SCORE</span>
+            </div>
+
+            <div class="score-card">
+                <p>Serie A</p>
+                <h3>Inter 1 - 1 Milan</h3>
+                <span class="live">SAMPLE SCORE</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Fixtures -->
+    <section class="section" id="fixtures">
+        <h2>📅 Upcoming Fixtures</h2>
+
+        <div class="fixture-list">
+            <div class="fixture">
+                <span>Manchester City</span>
+                <strong>VS</strong>
+                <span>Liverpool</span>
+                <small>Sample fixture</small>
+            </div>
+
+            <div class="fixture">
+                <span>Real Madrid</span>
+                <strong>VS</strong>
+                <span>Atletico Madrid</span>
+                <small>Sample fixture</small>
+            </div>
+
+            <div class="fixture">
+                <span>Bayern Munich</span>
+                <strong>VS</strong>
+                <span>Dortmund</span>
+                <small>Sample fixture</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leagues -->
+    <section class="section league-section" id="leagues">
+        <h2>🏆 Popular Leagues</h2>
+
+        <div class="league-grid">
+            <div class="league-card">
+                <h3>Premier League</h3>
+                <p>England</p>
+            </div>
+
+            <div class="league-card">
+                <h3>La Liga</h3>
+                <p>Spain</p>
+            </div>
+
+            <div class="league-card">
+                <h3>Serie A</h3>
+                <p>Italy</p>
+            </div>
+
+            <div class="league-card">
+                <h3>Bundesliga</h3>
+                <p>Germany</p>
+            </div>
+
+            <div class="league-card">
+                <h3>Ligue 1</h3>
+                <p>France</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section class="section dark-section" id="news">
+        <h2>📰 Sports News</h2>
+
+        <div class="news-grid">
+            <article class="news-card">
+                <div class="news-image">⚽</div>
+                <h3>Football News</h3>
+                <p>Discover football stories, teams and competitions.</p>
+            </article>
+
+            <article class="news-card">
+                <div class="news-image">🏀</div>
+                <h3>Basketball News</h3>
+                <p>Explore basketball highlights and exciting matches.</p>
+            </article>
+
+            <article class="news-card">
+                <div class="news-image">🎾</div>
+                <h3>Tennis News</h3>
+                <p>Follow tennis tournaments and player performances.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Search -->
+    <section class="section search-section" id="search">
+        <h2>🔎 Search Euro Sports Hub</h2>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a sport or league..."
+            >
+            <button onclick="searchWebsite()">Search</button>
+        </div>
+
+        <p id="searchResult"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>EURO SPORTS HUB</h2>
+        <p>Your world of sports, all in one place.</p>
+        <p>© 2026 Euro Sports Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
